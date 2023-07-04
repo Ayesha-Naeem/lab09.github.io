@@ -1,0 +1,40 @@
+.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px;
+}
+
+.news-card-item {
+  flex: 0 0 calc(25% - 20px);
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card-item .w3-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card-item img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.news-card-item .w3-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.news-card-item .w3-container p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
